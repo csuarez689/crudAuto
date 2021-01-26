@@ -111,7 +111,7 @@ namespace crudAuto.Controllers
             ErrorMessage = "Codigo incorrecto",
             CaptchaGeneratorLanguage = Language.English,
             CaptchaGeneratorDisplayMode = DisplayMode.ShowDigits)]
-        public async Task<IActionResult> Edit(int id, [Bind("Patente,Marca,Modelo,Año,Kms,Imagen")] Auto auto)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Patente,Marca,Modelo,Año,Kms,Imagen")] Auto auto)
         {
             if (id != auto.Id)
             {
